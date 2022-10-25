@@ -35,4 +35,17 @@ void main()
 			printf("Largest number is %f.", num3); //print num3 on screen
 		}
 	}
+	//another solution
+	/*if( (num1 > num2) && (num1 > num3 ) )
+	{
+		printf("\nLargest number is %f.", num1);
+	}
+	else if( (num2 > num1) && (num2 > num3) )
+	{
+		printf("\nLargest number is %f.", num2);
+	}
+	else
+	{
+		printf("\nLargest number is %f.", num3);
+	}*/
 }
