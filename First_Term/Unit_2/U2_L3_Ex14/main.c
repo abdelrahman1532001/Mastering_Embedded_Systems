@@ -9,7 +9,8 @@
 
 void main()
 {
-    int num, fact = 1, count;
+    int num, count;
+    unsigned long long int fact = 1;
 	printf("Enter an integer : "); //print
 	fflush(stdin); fflush(stdout); //clear buffers
 	scanf("%d", &num); //take an positive integer
