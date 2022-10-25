@@ -15,11 +15,13 @@ void main()
 	//check number odd or even
 	if( (number % 2) == 0 )
 	{
-		printf("number is even!\n"); //print
+		printf("number is even!\n");
 	}
 	else
 	{
-		printf("number is odd!\n"); //print
+		printf("number is odd!\n");
 	}
+	//another solution with one line
+    //( (number % 2 ) == 0 ) ? printf("number is even\n") : printf("number is odd\n");
 }
 
