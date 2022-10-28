@@ -18,6 +18,9 @@ void main()
 	fflush(stdout); fflush(stdin);
 	scanf("%d", &num2);
 	//swap
-	printf("after swap without temp, num1 = %d\n", num2);
-	printf("after swap without temp, num2 = %d\n", num1);
+	num1 = num1 + num2; //num1 = 5 , num2 = 4 --> num1 = 5 + 4
+	num2 = num1 - num2; //num2 = (5 + 4) - 4 = 5
+	num1 = num1 - num2; //num1 = (5 + 4) - 5 = 4
+	//print two numbers
+	printf("num1 = %d \nnum2 = %d\n", num1, num2);
 }
