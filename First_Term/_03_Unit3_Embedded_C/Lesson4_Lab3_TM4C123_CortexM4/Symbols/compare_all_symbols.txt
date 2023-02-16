@@ -1,0 +1,26 @@
+==================================================================================================================================
+|| (main.o symbol table) || (startup.o symbol table )       || (startup.o main.o after linked using linker script symbol table) ||
+|| (relocatable object ) || (relocatable object     )       || (the addresses are set with linker script)                       || 
+|| (not real addresses ) || (not real addresses     )       || (real addresses)                                                 ||
+==================================================================================================================================
+|| 00000000 T main       || 000000b0 W _BusFault_Handler    || 000000c8 W _BusFault_Handler                                     ||
+||                       || 000000b0 T _Default_Handler     || 000000c8 T _Default_Handler                                      ||
+||                       ||          U _E_bss               || 20000400 B _E_bss                                                ||
+||                       ||          U _E_data              || 20000000 T _E_data                                               ||
+||                       ||          U _E_text              || 000001a0 T _E_text                                               || 
+||                       || 000000b0 W _HardFault_Handler   || 000000c8 W _HardFault_Handler                                    ||
+||                       || 000000b0 W _MemMangement_Handler|| 000000c8 W _MemMangement_Handler                                 ||
+||                       || 000000b0 W _NMI_Handler         || 000000c8 W _NMI_Handler                                          ||
+||                       || 00000000 T _reset               || 00000018 T _reset                                                ||
+||                       ||          U _S_bss               || 20000000 B _S_bss                                                ||
+||                       ||          U _S_data              || 20000000 T _S_data                                               ||
+||                       ||          U main                 || 20000800 B _SP                                                   ||
+||                       || 00000000 R P_ISR_Vectors        || 20000000 b _STACK                                                ||
+||                       ||                                 || 000000d4 T main                                                  ||
+||                       ||                                 || 00000000 T P_ISR_Vectors                                         ||
+||                       ||                                 ||                                                                  ||
+==================================================================================================================================
+    
+                      
+     
+                   

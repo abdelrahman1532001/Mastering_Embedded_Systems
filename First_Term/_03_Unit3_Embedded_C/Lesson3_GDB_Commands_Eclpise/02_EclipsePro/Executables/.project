@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>Executables</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.cdt.core.cnature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>Mastering-Embedded-Systems</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>Mastering-Embedded-Systems/MyProgress</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>Mastering-Embedded-Systems/MyProgress/First_Term</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>Mastering-Embedded-Systems/MyProgress/First_Term/_03_Unit3_Embedded_C</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>Mastering-Embedded-Systems/MyProgress/First_Term/_03_Unit3_Embedded_C/Lesson3_GDB_Commands_Eclpise</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>Mastering-Embedded-Systems/MyProgress/First_Term/_03_Unit3_Embedded_C/Lesson3_GDB_Commands_Eclpise/Learn-In-Depth.elf</name>
+			<type>1</type>
+			<location>E:/Mastering-Embedded-Systems/MyProgress/First_Term/_03_Unit3_Embedded_C/Lesson3_GDB_Commands_Eclpise/Learn-In-Depth.elf</location>
+		</link>
+	</linkedResources>
+</projectDescription>

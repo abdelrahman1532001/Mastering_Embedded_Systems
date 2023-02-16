@@ -1,0 +1,336 @@
+
+Allocating common symbols
+Common symbol       size              file
+
+uninit_g_variables  0x1               main.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x08000000         0x00020000         xr
+SRAM             0x20000000         0x00005000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+
+.text           0x08000000      0x102
+ *(.vectors*)
+ .vectors       0x08000000       0x50 startup.o
+ *(.text*)
+ .text          0x08000050       0xa8 main.o
+                0x08000050                main
+ .text          0x080000f8        0xa startup.o
+
+.data           0x08000104        0xc
+ .data          0x08000104        0xc main.o
+                0x08000104                AODR_Reg
+                0x08000108                init_g_variables
+                0x0800010c                const_variables
+ .data          0x08000110        0x0 startup.o
+
+.igot.plt       0x08000110        0x0
+ .igot.plt      0x00000000        0x0 main.o
+
+.glue_7         0x08000110        0x0
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0x08000110        0x0
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0x08000110        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x08000110        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.iplt           0x08000110        0x0
+ .iplt          0x00000000        0x0 main.o
+
+.rel.dyn        0x08000110        0x0
+ .rel.iplt      0x00000000        0x0 main.o
+
+.bss            0x20000000        0x1
+ *(.bss*)
+ .bss           0x20000000        0x0 main.o
+ .bss           0x20000000        0x0 startup.o
+ COMMON         0x20000000        0x1 main.o
+                0x20000000                uninit_g_variables
+LOAD main.o
+LOAD startup.o
+OUTPUT(Learn-In-Depth-CortexM3.elf elf32-littlearm)
+
+.debug_info     0x00000000      0x2e1
+ .debug_info    0x00000000      0x243 main.o
+ .debug_info    0x00000243       0x9e startup.o
+
+.debug_abbrev   0x00000000       0xec
+ .debug_abbrev  0x00000000       0xd8 main.o
+ .debug_abbrev  0x000000d8       0x14 startup.o
+
+.debug_loc      0x00000000       0x38
+ .debug_loc     0x00000000       0x38 main.o
+
+.debug_aranges  0x00000000       0x40
+ .debug_aranges
+                0x00000000       0x20 main.o
+ .debug_aranges
+                0x00000020       0x20 startup.o
+
+.debug_line     0x00000000       0x91
+ .debug_line    0x00000000       0x56 main.o
+ .debug_line    0x00000056       0x3b startup.o
+
+.debug_str      0x00000000      0x14f
+ .debug_str     0x00000000      0x14f main.o
+                                0x165 (size before relaxing)
+
+.comment        0x00000000       0x11
+ .comment       0x00000000       0x11 main.o
+                                 0x12 (size before relaxing)
+
+.ARM.attributes
+                0x00000000       0x31
+ .ARM.attributes
+                0x00000000       0x33 main.o
+ .ARM.attributes
+                0x00000033       0x21 startup.o
+
+.debug_frame    0x00000000       0x2c
+ .debug_frame   0x00000000       0x2c main.o
+
+Allocating common symbols
+Common symbol       size              file
+
+uninit_g_variables  0x1               main.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x08000000         0x00020000         xr
+SRAM             0x20000000         0x00005000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+
+.text           0x08000000      0x102
+ *(.vectors*)
+ .vectors       0x08000000       0x50 startup.o
+ *(.text*)
+ .text          0x08000050       0xa8 main.o
+                0x08000050                main
+ .text          0x080000f8        0xa startup.o
+
+.data           0x08000104        0xc
+ .data          0x08000104        0xc main.o
+                0x08000104                AODR_Reg
+                0x08000108                init_g_variables
+                0x0800010c                const_variables
+ .data          0x08000110        0x0 startup.o
+
+.igot.plt       0x08000110        0x0
+ .igot.plt      0x00000000        0x0 main.o
+
+.glue_7         0x08000110        0x0
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0x08000110        0x0
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0x08000110        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x08000110        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.iplt           0x08000110        0x0
+ .iplt          0x00000000        0x0 main.o
+
+.rel.dyn        0x08000110        0x0
+ .rel.iplt      0x00000000        0x0 main.o
+
+.bss            0x20000000        0x1
+ *(.bss*)
+ .bss           0x20000000        0x0 main.o
+ .bss           0x20000000        0x0 startup.o
+ COMMON         0x20000000        0x1 main.o
+                0x20000000                uninit_g_variables
+LOAD main.o
+LOAD startup.o
+OUTPUT(Learn-In-Depth-CortexM3.elf elf32-littlearm)
+
+.debug_info     0x00000000      0x2e1
+ .debug_info    0x00000000      0x243 main.o
+ .debug_info    0x00000243       0x9e startup.o
+
+.debug_abbrev   0x00000000       0xec
+ .debug_abbrev  0x00000000       0xd8 main.o
+ .debug_abbrev  0x000000d8       0x14 startup.o
+
+.debug_loc      0x00000000       0x38
+ .debug_loc     0x00000000       0x38 main.o
+
+.debug_aranges  0x00000000       0x40
+ .debug_aranges
+                0x00000000       0x20 main.o
+ .debug_aranges
+                0x00000020       0x20 startup.o
+
+.debug_line     0x00000000       0x91
+ .debug_line    0x00000000       0x56 main.o
+ .debug_line    0x00000056       0x3b startup.o
+
+.debug_str      0x00000000      0x14f
+ .debug_str     0x00000000      0x14f main.o
+                                0x165 (size before relaxing)
+
+.comment        0x00000000       0x11
+ .comment       0x00000000       0x11 main.o
+                                 0x12 (size before relaxing)
+
+.ARM.attributes
+                0x00000000       0x31
+ .ARM.attributes
+                0x00000000       0x33 main.o
+ .ARM.attributes
+                0x00000033       0x21 startup.o
+
+.debug_frame    0x00000000       0x2c
+ .debug_frame   0x00000000       0x2c main.o
+
+Learn-In-Depth-CortexM3.elf:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+08000000 <main-0x50>:
+ 8000000:	20001000 	andcs	r1, r0, r0
+ 8000004:	080000f8 	stmdaeq	r0, {r3, r4, r5, r6, r7}
+ 8000008:	080000ff 	stmdaeq	r0, {r0, r1, r2, r3, r4, r5, r6, r7}
+ 800000c:	080000ff 	stmdaeq	r0, {r0, r1, r2, r3, r4, r5, r6, r7}
+ 8000010:	080000ff 	stmdaeq	r0, {r0, r1, r2, r3, r4, r5, r6, r7}
+ 8000014:	080000ff 	stmdaeq	r0, {r0, r1, r2, r3, r4, r5, r6, r7}
+ 8000018:	080000ff 	stmdaeq	r0, {r0, r1, r2, r3, r4, r5, r6, r7}
+ 800001c:	080000ff 	stmdaeq	r0, {r0, r1, r2, r3, r4, r5, r6, r7}
+ 8000020:	080000ff 	stmdaeq	r0, {r0, r1, r2, r3, r4, r5, r6, r7}
+ 8000024:	080000ff 	stmdaeq	r0, {r0, r1, r2, r3, r4, r5, r6, r7}
+ 8000028:	080000ff 	stmdaeq	r0, {r0, r1, r2, r3, r4, r5, r6, r7}
+ 800002c:	080000ff 	stmdaeq	r0, {r0, r1, r2, r3, r4, r5, r6, r7}
+ 8000030:	080000ff 	stmdaeq	r0, {r0, r1, r2, r3, r4, r5, r6, r7}
+ 8000034:	080000ff 	stmdaeq	r0, {r0, r1, r2, r3, r4, r5, r6, r7}
+ 8000038:	080000ff 	stmdaeq	r0, {r0, r1, r2, r3, r4, r5, r6, r7}
+ 800003c:	080000ff 	stmdaeq	r0, {r0, r1, r2, r3, r4, r5, r6, r7}
+ 8000040:	080000ff 	stmdaeq	r0, {r0, r1, r2, r3, r4, r5, r6, r7}
+ 8000044:	080000ff 	stmdaeq	r0, {r0, r1, r2, r3, r4, r5, r6, r7}
+ 8000048:	080000ff 	stmdaeq	r0, {r0, r1, r2, r3, r4, r5, r6, r7}
+ 800004c:	080000ff 	stmdaeq	r0, {r0, r1, r2, r3, r4, r5, r6, r7}
+
+08000050 <main>:
+ 8000050:	b480      	push	{r7}
+ 8000052:	b083      	sub	sp, #12
+ 8000054:	af00      	add	r7, sp, #0
+ 8000056:	f241 0318 	movw	r3, #4120	; 0x1018
+ 800005a:	f2c4 0302 	movt	r3, #16386	; 0x4002
+ 800005e:	f241 0218 	movw	r2, #4120	; 0x1018
+ 8000062:	f2c4 0202 	movt	r2, #16386	; 0x4002
+ 8000066:	6812      	ldr	r2, [r2, #0]
+ 8000068:	f042 0204 	orr.w	r2, r2, #4
+ 800006c:	601a      	str	r2, [r3, #0]
+ 800006e:	f640 0304 	movw	r3, #2052	; 0x804
+ 8000072:	f2c4 0301 	movt	r3, #16385	; 0x4001
+ 8000076:	f640 0204 	movw	r2, #2052	; 0x804
+ 800007a:	f2c4 0201 	movt	r2, #16385	; 0x4001
+ 800007e:	6812      	ldr	r2, [r2, #0]
+ 8000080:	f422 0270 	bic.w	r2, r2, #15728640	; 0xf00000
+ 8000084:	601a      	str	r2, [r3, #0]
+ 8000086:	f640 0304 	movw	r3, #2052	; 0x804
+ 800008a:	f2c4 0301 	movt	r3, #16385	; 0x4001
+ 800008e:	f640 0204 	movw	r2, #2052	; 0x804
+ 8000092:	f2c4 0201 	movt	r2, #16385	; 0x4001
+ 8000096:	6812      	ldr	r2, [r2, #0]
+ 8000098:	f442 1200 	orr.w	r2, r2, #2097152	; 0x200000
+ 800009c:	601a      	str	r2, [r3, #0]
+ 800009e:	f240 1304 	movw	r3, #260	; 0x104
+ 80000a2:	f6c0 0300 	movt	r3, #2048	; 0x800
+ 80000a6:	681b      	ldr	r3, [r3, #0]
+ 80000a8:	881a      	ldrh	r2, [r3, #0]
+ 80000aa:	f442 5200 	orr.w	r2, r2, #8192	; 0x2000
+ 80000ae:	801a      	strh	r2, [r3, #0]
+ 80000b0:	f04f 0300 	mov.w	r3, #0
+ 80000b4:	603b      	str	r3, [r7, #0]
+ 80000b6:	e003      	b.n	80000c0 <main+0x70>
+ 80000b8:	683b      	ldr	r3, [r7, #0]
+ 80000ba:	f103 0301 	add.w	r3, r3, #1
+ 80000be:	603b      	str	r3, [r7, #0]
+ 80000c0:	683a      	ldr	r2, [r7, #0]
+ 80000c2:	f241 3387 	movw	r3, #4999	; 0x1387
+ 80000c6:	429a      	cmp	r2, r3
+ 80000c8:	ddf6      	ble.n	80000b8 <main+0x68>
+ 80000ca:	f240 1304 	movw	r3, #260	; 0x104
+ 80000ce:	f6c0 0300 	movt	r3, #2048	; 0x800
+ 80000d2:	681b      	ldr	r3, [r3, #0]
+ 80000d4:	881a      	ldrh	r2, [r3, #0]
+ 80000d6:	f422 5200 	bic.w	r2, r2, #8192	; 0x2000
+ 80000da:	801a      	strh	r2, [r3, #0]
+ 80000dc:	f04f 0300 	mov.w	r3, #0
+ 80000e0:	607b      	str	r3, [r7, #4]
+ 80000e2:	e003      	b.n	80000ec <main+0x9c>
+ 80000e4:	687b      	ldr	r3, [r7, #4]
+ 80000e6:	f103 0301 	add.w	r3, r3, #1
+ 80000ea:	607b      	str	r3, [r7, #4]
+ 80000ec:	687a      	ldr	r2, [r7, #4]
+ 80000ee:	f241 3387 	movw	r3, #4999	; 0x1387
+ 80000f2:	429a      	cmp	r2, r3
+ 80000f4:	ddf6      	ble.n	80000e4 <main+0x94>
+ 80000f6:	e7d2      	b.n	800009e <main+0x4e>
+
+080000f8 <_reset>:
+ 80000f8:	f7ff ffaa 	bl	8000050 <main>
+ 80000fc:	e7fe      	b.n	80000fc <_reset+0x4>
+
+080000fe <vector_handler>:
+ 80000fe:	f7ff ffa7 	bl	8000050 <main>
+
+Disassembly of section .data:
+
+08000104 <AODR_Reg>:
+ 8000104:	4001080c 	andmi	r0, r1, ip, lsl #16
+
+08000108 <init_g_variables>:
+ 8000108:	00030201 	andeq	r0, r3, r1, lsl #4
+
+0800010c <const_variables>:
+ 800010c:	00030201 	andeq	r0, r3, r1, lsl #4
+
+Disassembly of section .bss:
+
+20000000 <uninit_g_variables>:
+	...
+
+Disassembly of section .comment:
+
+00000000 <.comment>:
+   0:	3a434347 	bcc	10d0d24 <main-0x6f2f32c>
+   4:	4e472820 	cdpmi	8, 4, cr2, cr7, cr0, {1}
+   8:	34202955 	strtcc	r2, [r0], #-2389	; 0x955
+   c:	322e372e 	eorcc	r3, lr, #12058624	; 0xb80000
+	...
+
+Disassembly of section .ARM.attributes:
+
+00000000 <.ARM.attributes>:
+   0:	00003041 	andeq	r3, r0, r1, asr #32
+   4:	61656100 	cmnvs	r5, r0, lsl #2
+   8:	01006962 	tsteq	r0, r2, ror #18
+   c:	00000026 	andeq	r0, r0, r6, lsr #32
+  10:	726f4305 	rsbvc	r4, pc, #335544320	; 0x14000000
+  14:	2d786574 	cfldr64cs	mvdx6, [r8, #-464]!	; 0xfffffe30
+  18:	0600334d 	streq	r3, [r0], -sp, asr #6
+  1c:	094d070a 	stmdbeq	sp, {r1, r3, r8, r9, sl}^
+  20:	14041202 	strne	r1, [r4], #-514	; 0x202
+  24:	17011501 	strne	r1, [r1, -r1, lsl #10]
+  28:	1a011803 	bne	4603c <main-0x7fba014>
+  2c:	22061e01 	andcs	r1, r6, #1, 28
+  30:	Address 0x00000030 is out of bounds.
+

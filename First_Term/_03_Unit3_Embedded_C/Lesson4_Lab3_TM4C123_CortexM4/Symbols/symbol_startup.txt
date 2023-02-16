@@ -1,0 +1,18 @@
+===============================================================
+startup.o symbol table
+===============================================================
+
+000000b0 W _BusFault_Handler
+000000b0 T _Default_Handler
+         U _E_bss
+         U _E_data
+         U _E_text
+000000b0 W _HardFault_Handler
+000000b0 W _MemMangement_Handler
+000000b0 W _NMI_Handler
+00000000 T _reset
+         U _S_bss
+         U _S_data
+00000000 b _STACK
+         U main
+00000000 R P_ISR_Vectors

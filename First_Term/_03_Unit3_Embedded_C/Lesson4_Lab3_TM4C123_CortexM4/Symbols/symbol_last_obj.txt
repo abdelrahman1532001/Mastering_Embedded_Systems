@@ -1,0 +1,19 @@
+===============================================================
+startup.o main.o after linked using linker script symbol table
+===============================================================
+
+000000c8 W _BusFault_Handler
+000000c8 T _Default_Handler
+20000400 B _E_bss
+20000000 T _E_data
+000001a0 T _E_text
+000000c8 W _HardFault_Handler
+000000c8 W _MemMangement_Handler
+000000c8 W _NMI_Handler
+00000018 T _reset
+20000000 B _S_bss
+20000000 T _S_data
+20000800 B _SP
+20000000 b _STACK
+000000d4 T main
+00000000 T P_ISR_Vectors
