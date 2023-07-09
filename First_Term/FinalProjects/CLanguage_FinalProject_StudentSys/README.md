@@ -5,10 +5,10 @@ It allows users to manage student records by performing operations such as addin
 
 ## Features 🚀
 
-- **Add** a student: Enter student details such as name, ID, and program to add a new student record.
+- **Add**    a student: Enter student details such as name, ID, and program to add a new student record.
 - **Delete** a student: Remove a student record by specifying the student's ID.
 - **Search** for a student: Find a student by their ID and display their information.
-- **List** all students: View a list of all the students and their corresponding details.
+- **List**   all students: View a list of all the students and their corresponding details.
 
 ## Used Tools 🛠️
 
@@ -18,7 +18,7 @@ It allows users to manage student records by performing operations such as addin
 
 ## How to Test the Program 🧪
 
-1. Download the executable file ("CLanguage_FinalProject_StudentSys.exe") <big>from</big> the [**Debug**](https://github.com/abdelrahman1532001/Mastering_Embedded_Systems/tree/master/First_Term/FinalProjects/CLanguage_FinalProject_StudentSys/Debug) folder.
+1. Download the executable file ("CLanguage_FinalProject_StudentSys.exe") from the [**Debug**](https://github.com/abdelrahman1532001/Mastering_Embedded_Systems/tree/master/First_Term/FinalProjects/CLanguage_FinalProject_StudentSys/Debug) folder.
 2. Open a command prompt or terminal and navigate to the location of the downloaded .exe file.
 3. Run the program by executing the following command: CLanguage_FinalProject_StudentSys.exe
 
