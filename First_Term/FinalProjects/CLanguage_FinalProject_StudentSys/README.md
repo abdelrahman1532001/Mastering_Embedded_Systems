@@ -5,10 +5,10 @@ It allows users to manage student records by performing operations such as addin
 
 ## Features 🚀
 
-- Add a student: Enter student details such as name, ID, and program to add a new student record.
-- Delete a student: Remove a student record by specifying the student's ID.
-- Search for a student: Find a student by their ID and display their information.
-- List all students: View a list of all the students and their corresponding details.
+- **Add** a student: Enter student details such as name, ID, and program to add a new student record.
+- **Delete** a student: Remove a student record by specifying the student's ID.
+- **Search** for a student: Find a student by their ID and display their information.
+- **List** all students: View a list of all the students and their corresponding details.
 
 ## Used Tools 🛠️
 
